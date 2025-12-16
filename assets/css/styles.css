@@ -162,6 +162,8 @@ section.experience,
 section.education,
 section.projects {
   width: 94%;
+  padding-left: 1%;
+  padding-right: 1%;
   max-width: var(--content);
   margin: var(--s-6) auto;
 }
@@ -172,8 +174,7 @@ section.education {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 1%;
-  padding-right: 1%;
+
 }
 
 section > h2 {
@@ -208,6 +209,19 @@ section > h2 {
 .title_date {
   display: flex;
   justify-content: space-between;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .project-description {
+  flex: 1;
+}
+
+.project-card .exp-toggle {
+  align-self: flex-start;
 }
 
 .exp-toggle {
