@@ -62,16 +62,18 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   gap: 16px;
   padding: 10px 18px;
   background: rgba(11, 15, 20, .65);
   backdrop-filter: saturate(140%) blur(8px);
   border-bottom: 1px solid #1b2634;
-  height: auto;
-  flex-wrap: wrap;
+  height: 56px;
+  flex-wrap: nowrap;
   row-gap: 10px;
 }
 
@@ -156,6 +158,11 @@ h5 {
 .detail {
   display: none;
 }
+
+section {
+  scroll-margin-top: 80px;
+}
+
 
 section.about,
 section.experience,
@@ -340,9 +347,11 @@ section > h2 {
 }
 
 @media (min-width: 900px) {
-  .site-header {
-    flex-wrap: nowrap;
-    height: 56px;
+  .site-header{
+    height: auto;
+    padding: 10px 18px;
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
 
   .site-header > nav {
