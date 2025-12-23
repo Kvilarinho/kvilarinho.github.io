@@ -3,13 +3,22 @@ import { projects } from "./data/projects.js";
 const slug = new URLSearchParams(window.location.search).get("project");
 const project = projects[slug];
 
+//GO BACK BUTTON
+    const goBackButton = document.getElementById("goBackButton");
+    goBackButton.innerHTML = `<a class="exp-toggle"><span class="chev"><</span>Go Back</a>`;
+    goBackButton.addEventListener("click", () => {
+        window.history.back();
+    });
+
 if (!project) {
     document.getElementById("projectDescription").innerHTML = "<p>Project not found.</p>";
 } else {
 
+    
     // HERO IMAGE
-    document.getElementById("projectHero").innerHTML =
-        `<img src="${project.images.cover}" alt="${project.title}" />`;
+    const heroImage = document.getElementById("projectHero");
+    heroImage.innerHTML =
+        `<img class="project-hero" src="${project.images.cover}" alt="${project.title}" />`;
 
     // DESCRIPTION
     document.getElementById("projectDescription").innerHTML = `

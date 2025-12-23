@@ -59,6 +59,11 @@ a:hover {
   opacity: .9;
 }
 
+main.content {
+  display: flex;
+  flex-direction: column; 
+}
+
 /* ========================================================================== */
 /* 2) UTILITIES */
 /* ========================================================================== */
@@ -79,7 +84,7 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 9999;
-  gap: 16px;
+  gap: var(--s-3);
   padding: 10px 18px;
   background: rgba(11, 15, 20, .65);
   backdrop-filter: saturate(140%) blur(8px);
@@ -174,6 +179,11 @@ h5 {
   display: none;
 }
 
+
+img.project-hero{
+  width: 100%;
+}
+
 /* ========================================================================== */
 /* 5) SECTIONS (GLOBAL) */
 /* ========================================================================== */
@@ -186,7 +196,8 @@ section.experience,
 section.education,
 section.projects,
 section.skills,
-section.contacts {
+section.contacts, 
+section.project-sections {
   width: 94%;
   padding-left: 1%;
   padding-right: 1%;
@@ -299,6 +310,10 @@ section>h2 {
   transform: translateX(4px);
 }
 
+section#goBackButton.go-back-button {
+  margin: 0.5%;
+}
+
 /* ========================================================================== */
 /* 9) EDUCATION */
 /* ========================================================================== */
@@ -379,10 +394,26 @@ section>h2 {
   padding: var(--s-4) 0;
 }
 
+/* PROJECT PAGE */
+.project-sections h3, h2 {
+  padding-top: 3%;
+}
+
 
 /* ========================================================================== */
 /* 13) MEDIA QUERIES */
 /* ========================================================================== */
+@media (max-width: 1024px) {
+  section.projects-sections {
+    width: 50%;
+  }
+
+  a#githubLink, section#goBackButton.go-back-button {
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+}
+
 @media (max-width: 700px) {
   section {
     padding-inline: var(--s-3);
@@ -457,6 +488,10 @@ section>h2 {
     scroll-snap-type: x mandatory;
   }
 
+  #projectHero img {
+    width: 100%;
+  }
+
   .site-header>nav a {
     scroll-snap-align: start;
   }
@@ -467,5 +502,15 @@ section>h2 {
     flex-direction: column;
   }
 
+  h3, h2{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin: 0;
+  }
+
+  a#githubLink {
+    margin: 5%;
+  }
+  
 
 }

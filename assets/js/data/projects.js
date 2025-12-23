@@ -134,7 +134,7 @@ const taskManager = {
 const portfolioWebsite = {
     title: "Personal Portfolio Website",
     images: {
-        cover: "assets/img/projects/portfolio/portfolio.jpeg"
+        cover: "assets/img/projects/portfolio-website/portfolio-website.png"
     },
     longDescription: {
         intro: "This personal portfolio website was designed and developed from scratch to showcase my projects, skills, and technical journey as a software developer. The site focuses on clean structure, maintainability, and scalability, rather than relying on heavy frameworks.",
