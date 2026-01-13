@@ -295,6 +295,10 @@ section#goBackButton.go-back-button {
   margin: 0.5%;
 }
 
+a#githubLink.exp-toggle {
+  margin-left: 0.5%;
+}
+
 /* ===== EDUCATION ===== */
 .education-card {
   padding-top: var(--s-4);
