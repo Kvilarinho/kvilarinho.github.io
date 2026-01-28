@@ -36,43 +36,6 @@ The goal of this project is both to present my work and to apply fundamental fro
 
 ---
 
-## Project Structure
-
-```
-/
-├── index.html
-├── project.html
-├── favicon.ico
-│
-├── assets/
-│   ├── css/
-│   │   └── styles.css
-│   │
-│   └── img/
-│       ├── avatar.png
-│       ├── avatar-logo.png
-│       │
-│       └── projects/
-│           ├── bullseye/
-│           │   └── bullseye.jpeg
-│           ├── concurrent-tcp-chatserver/
-│           │   └── concurrent-tcp-chatserver.jpeg
-│           ├── portfolio-website/
-│           │   └── portfolio-website.png
-│           ├── task-manager/
-│           │   └── task-manager.jpeg
-│           └── vanilla-webserver/
-│               └── vanilla-webserver.jpeg
-│
-└── js/
-    ├── scripts.js
-    ├── project.js
-    └── data/
-        └── projects.js
-```
-
----
-
 ## How It Works
 
 ### Project Data
