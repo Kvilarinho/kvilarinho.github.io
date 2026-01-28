@@ -81,7 +81,7 @@ const teamSafetyMonitor = {
             "VS Code"
         ]
     },
-    github: "https://github.com/Kvilarinho/team-safety-monitor"
+    github: "https://github.com/AlienGamer29/team_safety_monitor"
 };
 
 
