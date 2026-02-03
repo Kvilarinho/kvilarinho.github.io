@@ -1,9 +1,9 @@
-import button from "/js/views/components/commons/button.js";
+import navButton from "/js/views/components/commons/nav-button.js";
 import img from "/js/views/components/commons/img.js";
 
 export default function headerLogo() {
 
-    const headerLogo = button("#top", "", "header-logo");
+    const headerLogo = navButton("#top", "", "header-logo");
     
     const logoImg = img("/assets/img/avatar-logo.png", "Logo", "avatar-logo", "28px");
 

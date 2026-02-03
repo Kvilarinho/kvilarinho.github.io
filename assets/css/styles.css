@@ -165,7 +165,7 @@ h5 {
   color: var(--muted);
 }
 
-.detail {
+.details {
   display: none;
 }
 
@@ -226,7 +226,7 @@ section>h2 {
   margin-bottom: var(--s-3);
 }
 
-.card .detail li {
+.card .details li {
   margin-top: 6px;
 }
 
