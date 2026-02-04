@@ -1,6 +1,7 @@
 import section from "/js/views/components/commons/section.js";
 import button from "/js/views/components/commons/button.js";
 import { aboutDetails, showAboutDetails } from "/js/views/components/home-page/main/helpers/about-details.js";
+import chevron from "/js/views/components/commons/chevron.js";
 
 export default function sectionAbout() {
 
@@ -11,7 +12,7 @@ export default function sectionAbout() {
 
     const paragraph = document.createElement("p");
     paragraph.innerHTML = "I am a Biomedical Laboratory Technician transitioning " +
-                        "into Software Development. " +
+                        "into Software Development. <br>" +
                     "For the past 10 years, I worked in highly regulated and " +
                     "fast-paced environments, where <strong>precision and structure</strong> — and solving problems under pressure — were part of my daily " +
                     "routine. These experiences shaped my analytical mindset and " +
@@ -27,12 +28,10 @@ export default function sectionAbout() {
         return false;
     };
 
-    const chevron = document.createElement("span");
-    chevron.className = "chev";
-    chevron.textContent = ">";
+    const chevronElement = chevron();
 
 
-    buttonReadMore.appendChild(chevron);
+    buttonReadMore.appendChild(chevronElement);
     card.appendChild(buttonReadMore);
     
     const aboutDetailsElement = aboutDetails();

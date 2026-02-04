@@ -4,22 +4,17 @@ function aboutDetails() {
     aboutDetails.className = "details";
 
     const detailsParagraph = document.createElement("p");
-    detailsParagraph.innerHTML = "I am currently completing a Full-Stack Java Bootcamp and " +
-                        "building practical projects in Java, using <strong>OOP</strong>, <strong>MVC</strong>, " +
+    detailsParagraph.innerHTML = "I recently completed a Full-Stack Java Bootcamp, where I built hands-on projects " +
+                        " using <strong>Java</strong>, <strong>OOP</strong>, <strong>MVC architecture</strong>, " +
                         "<strong>networking</strong>, <strong>multithreading</strong>, and <strong>web technologies</strong> such as " +
-                        "HTML, CSS, and JavaScript. I enjoy challenges that make " +
-                        "me think, and I love creating solutions that are clean, " +
-                        "logical, and useful.<br><br>" +
-                    
+                        "HTML, CSS, and JavaScript. I enjoy complex challenges " +
+                        "and creating solutions that are clean, logical, and practical.<br><br>" +
 
                         " Coming from a scientific background, I bring <strong>discipline</strong>, " +
                         "<strong>attention to detail</strong>, and a strong sense of " +
-                        "<strong>responsibility</strong>. At the same time, curiosity, " +
-                        "determination, and a growing passion for tech are " +
-                        "driving me forward. " +
-                        "I am committed to continuous learning and excited to " +
-                        "contribute to real-world software projects and grow " +
-                        "within the tech industry.";
+                        "<strong>responsibility</strong>. Driven by curiosity and determination, " +
+                        " I am committed to continuous learning and excited to contribute " +
+                        "to real-world software projects while growing as a developer.";
                         
     aboutDetails.appendChild(detailsParagraph);
     aboutDetails.style.display = "none";
