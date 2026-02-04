@@ -30,7 +30,6 @@ export default function sectionAbout() {
 
     const chevronElement = chevron();
 
-
     buttonReadMore.appendChild(chevronElement);
     card.appendChild(buttonReadMore);
     
