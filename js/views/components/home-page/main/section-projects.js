@@ -9,6 +9,7 @@ export default function sectionProjects() {
     const grid = document.createElement("div");
     grid.className = "projects-grid";
 
+    // Create project cards
     const project1 = projectCard(
         `${projects.teamSafetyMonitor.title}`,
         `${projects.teamSafetyMonitor.shortDescription}`,
