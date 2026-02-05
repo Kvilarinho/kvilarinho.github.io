@@ -11,7 +11,7 @@ The website is implemented using vanilla JavaScript with a component-based archi
 This project started as a traditional static HTML website and was refactored into a **component-based architecture** for learning purposes and to make it easier to scale and maintain.
 
 **Version History:**
-- `v1.0-html-baseline` - Initial version with static HTML structure
+- `v1.0-html-baseline` - Initial version with HTML-structure approach
 - `main` (current) - Component-based architecture with MVC pattern
 
 ---

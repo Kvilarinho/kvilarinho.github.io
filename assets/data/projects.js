@@ -235,36 +235,46 @@ const portfolioWebsite = {
     images: {
         cover: "assets/img/projects/portfolio-website/portfolio-website.png"
     },
-    shortDescription: "A personal portfolio website built using <strong>HTML, CSS, " +
-                        "and JavaScript</strong> to showcase my skills, projects, and " +
-                        "experience as I transition into software development.",
+    shortDescription: "A personal portfolio built with <strong>component-based architecture using vanilla JavaScript</strong>, " +
+                        "following <strong>MVC pattern and ES6 modules</strong>. Evolved from HTML structure with dynamic content to fully component-driven architecture.",
     longDescription: {
-        intro: "This personal portfolio website was designed and developed from scratch to showcase my projects, " +
-            "skills, and technical journey as a software developer. The site focuses on clean structure, maintainability, " +
-            "and scalability, rather than relying on heavy frameworks.",
+        intro: "This personal portfolio website was designed and developed from scratch to showcase my projects, skills, and technical journey. " +
+            "The project evolved from an HTML-structured approach with dynamic content rendering (v1.0-html-baseline) to a fully component-based " +
+            "architecture where all DOM elements are created programmatically, demonstrating my commitment to code quality, maintainability, and continuous improvement.",
         features: [
-            "Project listing page with short descriptions and navigation to detailed project pages",
-            "Dynamic project details rendered from structured JavaScript data",
-            "Reusable project template shared across all detailed pages",
-            "Clean and modular JavaScript architecture separating data, rendering logic, and page control",
-            "Responsive layout optimized for desktop and mobile devices"
+            "Component-based architecture with clear separation of concerns (Controller → View → Components)",
+            "MVC-inspired structure: Controllers initialize pages, Views assemble components, Components create DOM elements",
+            "All HTML elements created programmatically via JavaScript (no predefined HTML structure)",
+            "Reusable components organized by page sections (header, main, footer)",
+            "ES6 modules with proper import/export structure",
+            "Centralized project data with dynamic rendering across all pages",
+            "Responsive layout optimized for desktop and mobile devices",
+            "Architectural evolution from HTML templates to component-driven design"
         ],
-        architecture: "The website follows a modular, data-driven approach. All project information is centralized in a single data file, while rendering logic is handled by reusable functions. URL parameters are used to dynamically load project details, avoiding content duplication and improving maintainability. This structure allows new projects to be added with minimal changes to the codebase.",
-        learningOutcome: "Building this website strengthened my understanding of frontend fundamentals, DOM manipulation, modular JavaScript architecture, and clean separation of concerns. It also provided hands-on experience in designing scalable project structures suitable for long-term portfolio growth."
+        architecture: "The website follows a component-based architecture similar to modern frameworks, but built entirely with vanilla JavaScript. " +
+            "Each page has a dedicated controller that initializes the view, which in turn assembles individual components. Components are self-contained " +
+            "functions that create and return DOM elements, promoting reusability and testability. The folder structure mirrors this separation: " +
+            "controllers/, views/, and components/ organized by page (home-page/, project-page/). This architecture makes it easy to add features, " +
+            "maintain code, and scale the project without framework dependencies.",
+        learningOutcome: "This project provided deep hands-on experience with frontend architecture patterns, DOM manipulation, modular JavaScript, " +
+            "and the importance of separation of concerns. Evolving from HTML-based structure to programmatic component creation reinforced my understanding " +
+            "of scalable code architecture, component design patterns, and architectural decision-making. It served as a practical foundation for understanding " +
+            "how modern frontend frameworks work internally."
     },
     technologies: {
-        backend: [
-            "Data-Driven Architecture (JavaScript Objects)"
-        ],
         frontend: [
+            "JavaScript (ES6+ Modules)",
+            "Component-Based Architecture",
+            "MVC Pattern",
+            "DOM Manipulation",
             "HTML5",
             "CSS3",
-            "JavaScript",
             "Responsive Design"
         ],
         tools: [
-            "Git & GitHub",
-            "GitHub Pages"
+            "Git & GitHub (version control & branching)",
+            "GitHub Pages",
+            "VS Code"
         ]
     },
     projectLink: "project.html?project=portfolioWebsite",

@@ -1,4 +1,4 @@
-export default function projectFooter() {
+export default function footer() {
     const footer = document.createElement("footer");
     footer.className = "site-footer";
 
