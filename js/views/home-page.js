@@ -6,7 +6,6 @@ export default function renderHomepage() {
 
     const header = pageHeader();
     const mainElement = main();
-
     
     app.appendChild(header);
     app.appendChild(mainElement);
