@@ -83,7 +83,6 @@ main.content {
   border-bottom: 1px solid #1b2634;
   height: 56px;
   flex-wrap: nowrap;
-  row-gap: 10px;
 }
 
 .header-logo {
@@ -95,6 +94,8 @@ main.content {
   background: transparent;
   color: var(--text);
   font-weight: 600;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .avatar-logo {
