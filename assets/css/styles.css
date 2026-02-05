@@ -111,6 +111,45 @@ nav {
   justify-content: space-around;
   gap: 18px;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 10000;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .nav a:hover {
@@ -380,6 +419,8 @@ a#githubLink.exp-toggle {
 
 
 /* ===== MEDIA QUERIES ===== */
+
+/* Tablet */
 @media (max-width: 1024px) {
   section.projects-sections {
     width: 50%;
@@ -388,6 +429,49 @@ a#githubLink.exp-toggle {
   a#githubLink, section#goBackButton.go-back-button {
     margin-left: 4%;
     margin-top: 2%;
+  }
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 56px;
+    right: 0;
+    background: rgba(15, 22, 32, 0.98);
+    backdrop-filter: saturate(140%) blur(8px);
+    flex-direction: column;
+    padding: 20px;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    min-width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    gap: 12px;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    background: rgba(110, 231, 255, 0.1);
   }
 }
 
@@ -440,6 +524,7 @@ a#githubLink.exp-toggle {
   }
 }
 
+/* Desktop large */
 @media (min-width: 900px) {
   .site-header {
     height: auto;
@@ -456,6 +541,7 @@ a#githubLink.exp-toggle {
   }
 }
 
+/* Mobile small */
 @media (max-width: 480px) {
   .site-header>nav {
     flex: 1 1 auto;
@@ -488,6 +574,4 @@ a#githubLink.exp-toggle {
   a#githubLink {
     margin: 5%;
   }
-  
-
 }
