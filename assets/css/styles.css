@@ -293,6 +293,7 @@ section>h2 {
 
 section#goBackButton.go-back-button {
   margin: 5%;
+  margin-top: 1%;
 }
 
 a#githubLink.exp-toggle {
