@@ -5,33 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project</title>
         <link rel="stylesheet" href="assets/css/styles.css">
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8DZQ9CJX4P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8DZQ9CJX4P');
-</script>
+            <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DZQ9CJX4P"></script>
+        <script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8DZQ9CJX4P');
+        </script>
     </head>
-    <body>
-        <main>
-            <section id="goBackButton" class="go-back-button"></section>
-            <section class="project-sections">
-                <section id="projectHero"></section>
-                <section id="projectDescription"></section>
-                <section id="technologiesUsed"></section>
-                <section id="projectLinks"></section>
-            </section>
-            <a id="githubLink" class="exp-toggle" href target="_blank">GitHub Repo
-                <span class="chev">></span>
-            </a>
-        </main>
-        <footer class="site-footer">
-            <p>© <span id="year"></span> Kátia Vilarinho · Software Developer. All rights reserved.</p>
-        </footer>
-        <script type="module" src="assets/js/project.js"></script>
-        <script type="module" src="assets/js/script.js"></script>
+    <body id="app">
+        <script type="module" src="/js/controllers/project-controller.js"></script>
     </body>
 </html>

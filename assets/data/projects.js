@@ -3,8 +3,12 @@ const bullseye = {
     images: {
         cover: "assets/img/projects/bullseye/bullseye.jpeg"
     },
+    shortDescription: "A 2D <strong>Java game</strong> developed using " +
+                        "<strong>OOP, enums, factory pattern, randomization logic, and file I/O</strong> for persistent high scores. <br>" +
+                        "The player can shoot various types of arrows at targets. The objective is to score points by destroying those targets.",
     longDescription: {
-        intro: "Developed collaboratively in a team of four, Bullseye is a 2D arcade-style game built in Java using the SimpleGraphics library. The player controls an archer, shooting arrows at a moving target while avoiding obstacles and maximizing score.",
+        intro: "Developed collaboratively in a team of four, Bullseye is a 2D arcade-style game built in Java using the SimpleGraphics library. " +
+            "The player controls an archer, shooting arrows at a moving target while avoiding obstacles and maximizing score.",
         features: [
             "Player movement and shooting mechanics controlled by keyboard inputs",
             "Randomized arrow types with different speed and score variations",
@@ -31,6 +35,7 @@ const bullseye = {
             "IntelliJ IDEA"
         ]
     },
+    projectLink: "project.html?project=bullseye",
     github: "https://github.com/AlienGamer29/Bullseye"
 };
 
@@ -41,8 +46,13 @@ const teamSafetyMonitor = {
         cover: "assets/img/projects/team-safety-monitor/team_safety_monitor_login.jpeg",
         previewImage: "assets/img/projects/team-safety-monitor/team_safety_monitor_dashboard.jpeg"
     },
+    shortDescription: "Team Safety Monitor is a full-stack web application designed " +
+                        "to monitor team workload and identify burnout risk through metrics and alerts. " +
+                        "Built with <strong>Java, Spring Boot, JPA/Hibernate, PostgreSQL, HTML, CSS, and JavaScript</strong>.",
     longDescription: {
-        intro: "Developed collaboratively in a team of five as a final bootcamp project, Team Safety Monitor is a full-stack web application designed to analyze team workload and detect early signs of overwork and burnout. The system provides structured visibility into work patterns through role-based access, safety thresholds, and contextual risk alerts, supporting healthier and more sustainable team practices.",
+        intro: "Developed collaboratively in a team of five as a final bootcamp project, Team Safety Monitor is a full-stack web application " +
+            "designed to analyze team workload and detect early signs of overwork and burnout. The system provides structured visibility " +
+            "into work patterns through role-based access, safety thresholds, and contextual risk alerts, supporting healthier and more sustainable team practices.",
         features: [
             "Role-based access control with clearly defined Admin and Member responsibilities",
             "Members register daily work entries including working hours, breaks, focus blocks, and consecutive workdays",
@@ -81,6 +91,7 @@ const teamSafetyMonitor = {
             "VS Code"
         ]
     },
+    projectLink: "project.html?project=teamSafetyMonitor",
     github: "https://github.com/AlienGamer29/team_safety_monitor"
 };
 
@@ -90,8 +101,10 @@ const vanilla = {
     images: {
         cover: "assets/img/projects/vanilla-webserver/vanilla-webserver.jpeg"
     },
+    shortDescription: "Simple multithreaded HTTP server built in <strong>Java</strong> — serves static files with <strong>concurrency, Stream API, and clean OOP structure</strong>.",
     longDescription: {
-        intro: "I built a simple HTTP Web Server in Java from scratch to gain a deep understanding of low-level client-server communication and how the HTTP protocol works internally. The server processes incoming requests directly using Java sockets, without relying on external frameworks.",
+        intro: "I built a simple HTTP Web Server in Java from scratch to gain a deep understanding of low-level client-server communication and how the HTTP protocol works internally. " +
+            "The server processes incoming requests directly using Java sockets, without relying on external frameworks.",
         features: [
             "Handles multiple client connections concurrently using ExecutorService",
             "Manual parsing and processing of HTTP GET requests using Java Sockets",
@@ -123,6 +136,7 @@ const vanilla = {
             "Logging with java.util.logging"
         ]
     },
+    projectLink: "project.html?project=vanilla",
     github: "https://github.com/Kvilarinho/Vanilla-WebServer"
 };
 
@@ -132,8 +146,12 @@ const concurrentTcp = {
     images: {
         cover: "assets/img/projects/concurrent-tcp-chatserver/concurrent-tcp-chatserver.jpeg"
     },
+    shortDescription: "A multithreaded <strong>TCP chat server and client</strong> with commands, private messages, admin mode, and clean architecture. " +
+                        "<br>Includes tests <strong>(JUnit + Mockito) and full documentation.</strong> ",
     longDescription: {
-        intro: "Concurrent TCP Chat is a multi-client chat system built entirely in Java, designed to explore low-level networking, concurrency, and clean architecture principles. The system consists of a TCP server capable of handling multiple simultaneous clients and a terminal-based client that supports real-time messaging and command-based interaction.",
+        intro: "Concurrent TCP Chat is a multi-client chat system built entirely in Java, designed to explore low-level networking, " +
+            "concurrency, and clean architecture principles. The system consists of a TCP server capable of handling multiple simultaneous " +
+            "clients and a terminal-based client that supports real-time messaging and command-based interaction.",
         features: [
             "Concurrent TCP Chat Server supporting multiple clients simultaneously",
             "Thread pool-based concurrency model for efficient client handling",
@@ -165,6 +183,7 @@ const concurrentTcp = {
             "Javadoc"
         ]
     },
+    projectLink: "project.html?project=concurrentTcp",
     github: "https://github.com/Kvilarinho/Concurrent-TCP-ChatServer"
 };
 
@@ -174,8 +193,12 @@ const taskManager = {
     images: {
         cover: "assets/img/projects/task-manager/task-manager.jpeg"
     },
+    shortDescription: "Console-based task manager built with <strong>OOP and Strategy Pattern for command handling " +
+        "</strong>, includes file-based persistence.",
     longDescription: {
-        intro: "Task Manager is a command-line application developed entirely in Java, designed to manage daily tasks directly from the terminal with automatic file-based persistence. The application focuses on clean object-oriented design and practical backend concepts rather than graphical interfaces.",
+        intro: "Task Manager is a command-line application developed entirely in Java, designed to manage daily tasks " +
+            "directly from the terminal with automatic file-based persistence. The application focuses on clean object-oriented " +
+            "design and practical backend concepts rather than graphical interfaces.",
         features: [
             "Add, list, complete, and delete tasks via terminal commands",
             "Persistent storage using text files (tasks.dat) to retain data between sessions",
@@ -202,6 +225,7 @@ const taskManager = {
             "Maven"
         ]
     },
+    projectLink: "project.html?project=taskManager",
     github: "https://github.com/Kvilarinho/Task-Manager"
 };
 
@@ -211,8 +235,13 @@ const portfolioWebsite = {
     images: {
         cover: "assets/img/projects/portfolio-website/portfolio-website.png"
     },
+    shortDescription: "A personal portfolio website built using <strong>HTML, CSS, " +
+                        "and JavaScript</strong> to showcase my skills, projects, and " +
+                        "experience as I transition into software development.",
     longDescription: {
-        intro: "This personal portfolio website was designed and developed from scratch to showcase my projects, skills, and technical journey as a software developer. The site focuses on clean structure, maintainability, and scalability, rather than relying on heavy frameworks.",
+        intro: "This personal portfolio website was designed and developed from scratch to showcase my projects, " +
+            "skills, and technical journey as a software developer. The site focuses on clean structure, maintainability, " +
+            "and scalability, rather than relying on heavy frameworks.",
         features: [
             "Project listing page with short descriptions and navigation to detailed project pages",
             "Dynamic project details rendered from structured JavaScript data",
@@ -238,6 +267,7 @@ const portfolioWebsite = {
             "GitHub Pages"
         ]
     },
+    projectLink: "project.html?project=portfolioWebsite",
     github: "https://github.com/Kvilarinho/kvilarinho.github.io"
 };
 

@@ -1,0 +1,16 @@
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependências 
+node_modules/
+
+# Builds temporários 
+dist/
+build/
