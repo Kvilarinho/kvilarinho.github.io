@@ -36,7 +36,7 @@ const bullseye = {
         ]
     },
     projectLink: "project.html?project=bullseye",
-    github: "https://github.com/AlienGamer29/Bullseye"
+    github: "https://github.com/Kvilarinho/Bullseye"
 };
 
 
@@ -92,7 +92,7 @@ const teamSafetyMonitor = {
         ]
     },
     projectLink: "project.html?project=teamSafetyMonitor",
-    github: "https://github.com/AlienGamer29/team_safety_monitor"
+    github: "https://github.com/Kvilarinho/team_safety_monitor"
 };
 
 
