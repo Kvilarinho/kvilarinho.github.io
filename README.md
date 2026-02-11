@@ -110,6 +110,6 @@ This refactor was done as a learning exercise to:
 This project is under active development and will continue to evolve as new projects and features are added.
 
 Author: Katia Vilarinho  
-LinkedIn: https://www.linkedin.com/in/kátia-vilarinho
+LinkedIn: https://www.linkedin.com/in/kátia-vilarinho            
 Portfolio: https://katiavilarinho.dev
 
