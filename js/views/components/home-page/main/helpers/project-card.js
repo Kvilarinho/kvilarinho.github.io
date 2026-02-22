@@ -12,7 +12,7 @@ export default function projectCard(title, description, link) {
 
     const cardDescription = document.createElement("p");
     cardDescription.className = "project-description";
-    cardDescription.textContent = description;
+    cardDescription.innerHTML = description;
     card.appendChild(cardDescription);
 
     const buttonElement = button(link, "View Project", "exp-toggle");
