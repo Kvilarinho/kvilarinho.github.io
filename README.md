@@ -20,26 +20,6 @@ This project started as a traditional static HTML website and was refactored int
 
 The website now follows a **component-based structure** similar to modern frameworks, but using vanilla JavaScript:
 
-### Folder Structure
-```
-js/
-├── controllers/          # Controllers that initialize pages
-│   ├── app-controller.js
-│   ├── home-controller.js
-│   └── project-controller.js
-├── views/               # View layer that assembles components
-│   ├── home-page.js
-│   ├── project-page.js
-│   └── components/      # Reusable UI components
-│       ├── home-page/
-│       │   ├── header/
-│       │   └── main/
-│       └── project-page/
-│           ├── header/
-│           └── main/
-└── script.js           # Global utilities
-```
-
 ### How It Works
 
 1. **HTML files** are minimal - just a container (`<body id="app">`)
