@@ -1,6 +1,6 @@
 import button from "/js/views/components/commons/button.js";
 
-export default function projectCard(title, description, link) {
+export default function projectCard(title, description, link, projectId) {
 
     const card = document.createElement("div");
     card.classList.add("card", "project-card");
@@ -15,7 +15,8 @@ export default function projectCard(title, description, link) {
     cardDescription.innerHTML = description;
     card.appendChild(cardDescription);
 
-    const buttonElement = button(link, "View Project", "exp-toggle");
+    const buttonElement = button(link, "View Project", "exp-toggle project-link");
+    buttonElement.dataset.project = projectId;
     
     card.appendChild(buttonElement);
     

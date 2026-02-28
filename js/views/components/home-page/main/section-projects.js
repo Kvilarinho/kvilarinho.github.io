@@ -13,37 +13,43 @@ export default function sectionProjects() {
     const project1 = projectCard(
         `${projects.teamSafetyMonitor.title}`,
         `${projects.teamSafetyMonitor.shortDescription}`,
-        `${projects.teamSafetyMonitor.projectLink}`
+        `${projects.teamSafetyMonitor.projectLink}`,
+        "team-safety-monitor"
     );
 
     const project2 = projectCard(
         `${projects.portfolioWebsite.title}`,
         `${projects.portfolioWebsite.shortDescription}`,
-        `${projects.portfolioWebsite.projectLink}`
+        `${projects.portfolioWebsite.projectLink}`,
+        "portfolio-website"
     );
 
     const project3 = projectCard(
         `${projects.vanilla.title}`,
         `${projects.vanilla.shortDescription}`,
-        `${projects.vanilla.projectLink}`
+        `${projects.vanilla.projectLink}`,
+        "vanilla-webserver"
     );
 
     const project4 = projectCard(
         `${projects.concurrentTcp.title}`,
         `${projects.concurrentTcp.shortDescription}`,
-        `${projects.concurrentTcp.projectLink}`
+        `${projects.concurrentTcp.projectLink}`,
+        "concurrent-tcp-chatserver"
     );
 
     const project5 = projectCard(
         `${projects.bullseye.title}`,
         `${projects.bullseye.shortDescription}`,
-        `${projects.bullseye.projectLink}`
+        `${projects.bullseye.projectLink}`,
+        "bullseye"
     );
 
     const project6 = projectCard(
         `${projects.taskManager.title}`,
         `${projects.taskManager.shortDescription}`,
-        `${projects.taskManager.projectLink}`
+        `${projects.taskManager.projectLink}`,
+        "task-manager"
     );
 
     grid.appendChild(project1);

@@ -12,7 +12,7 @@ export default function sectionEducation() {
 
     // Education items
     const educationItem1 = educationItem(
-        "Full-Stack Programming Bootcamp",
+        "Software Engineering & AI — Full-Stack Programming Bootcamp",
         "Jul 2025 - Jan 2026",
         "Code for All"
     );

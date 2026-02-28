@@ -15,9 +15,11 @@ export default function contactsSection() {
     contactItems.appendChild(emailLink);
 
     const linkedinLink = contactLink("https://www.linkedin.com/in/kátia-vilarinho/", "_blank", "LinkedIn");
+    linkedinLink.id = "linkedin-link";
     contactItems.appendChild(linkedinLink);
 
     const githubLink = contactLink("https://github.com/Kvilarinho", "_blank", "GitHub");
+    githubLink.id = "github-link";
     contactItems.appendChild(githubLink);
 
     card.appendChild(contactItems);
