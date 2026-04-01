@@ -7,13 +7,10 @@ export function initScrollAnimations() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-in');
-                entry.target.dataset.wasVisible = 'true';
-            } else if (entry.target.dataset.wasVisible) {
-                // Animação de saída: remove animate-in para reverter para o estado inicial
-                entry.target.classList.remove('animate-in');
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
     animatedElements.forEach(el => observer.observe(el));
 }
