@@ -6,7 +6,7 @@ export default function contactsSection() {
     const sectionElement = section("contacts", "contacts", "Contacts");
 
     const card = document.createElement("div");
-    card.classList.add("card", "contacts-card");
+    card.classList.add("card", "contacts-card", "scroll-animate");
 
     const contactItems = document.createElement("div");
     contactItems.className = "contact-items";

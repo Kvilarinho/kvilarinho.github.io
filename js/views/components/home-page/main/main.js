@@ -9,6 +9,7 @@ import sectionContacts from "/js/views/components/home-page/main/section-contact
 export default function main() {
     const main = document.createElement("main");
     main.id = "top";
+
     
     // Sections
     const sectionHeroElement = sectionHero();

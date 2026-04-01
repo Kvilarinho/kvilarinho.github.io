@@ -1,3 +1,23 @@
+// === Scroll Animation Implementation ===
+// Chamado pelos controllers APÓS o render, para garantir que os elementos já existem no DOM
+export function initScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.scroll-animate');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+                entry.target.dataset.wasVisible = 'true';
+            } else if (entry.target.dataset.wasVisible) {
+                // Animação de saída: remove animate-in para reverter para o estado inicial
+                entry.target.classList.remove('animate-in');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    animatedElements.forEach(el => observer.observe(el));
+}
+
 export function initGlobalListeners() {
     const yearSpan = document.getElementById('year');
     if (yearSpan) {

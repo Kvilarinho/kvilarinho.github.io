@@ -1,5 +1,5 @@
 import renderProjectPage from "/js/views/project-page.js";
-import { initGlobalListeners } from "/js/script.js";
+import { initGlobalListeners, initScrollAnimations } from "/js/script.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     initProject();
@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
 export default function initProject() {
     renderProjectPage();
     initGlobalListeners();
+    initScrollAnimations();
 }
 
 

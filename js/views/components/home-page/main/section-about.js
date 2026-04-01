@@ -8,7 +8,7 @@ export default function sectionAbout() {
     const sectionElement = section("about", "about", "About Me");
 
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "card scroll-animate";
 
     const paragraph = document.createElement("p");
     paragraph.innerHTML = "I am a Biomedical Laboratory Technician transitioning " +

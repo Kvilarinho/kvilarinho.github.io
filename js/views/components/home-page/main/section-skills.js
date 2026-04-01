@@ -8,7 +8,7 @@ export default function sectionSkills() {
     const sectionElement = section("skills", "skills", "Skills");
 
     const skillsGrid = document.createElement("div");
-    skillsGrid.className = "skills-grid";
+    skillsGrid.className = "skills-grid scroll-animate";
 
     const skillsTitleElement = skillsTitle("card tec-skills-card", "Technical Skills");
 

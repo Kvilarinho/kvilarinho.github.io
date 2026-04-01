@@ -5,6 +5,7 @@ import githubLink from "/js/views/components/project-page/main/github-link.js";
 
 export default function projectMain(project) {
     const main = document.createElement("main");
+    main.classList.add("scroll-animate");
 
     const projectSections = document.createElement("section");
     projectSections.className = "project-sections";

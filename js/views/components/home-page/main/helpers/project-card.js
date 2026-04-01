@@ -3,7 +3,7 @@ import button from "/js/views/components/commons/button.js";
 export default function projectCard(title, description, link, projectId, tags = []) {
 
     const card = document.createElement("div");
-    card.classList.add("card", "project-card");
+    card.classList.add("card", "project-card", "scroll-animate");
 
     const cardTitle = document.createElement("h3");
     cardTitle.className = "project-title";

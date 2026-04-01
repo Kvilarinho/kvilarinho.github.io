@@ -1,5 +1,6 @@
 export default function projectDescription(project) {
     const section = document.createElement("section");
+    section.classList.add("scroll-animate");
     section.id = "projectDescription";
 
     section.innerHTML = `

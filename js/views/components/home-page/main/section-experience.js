@@ -9,7 +9,7 @@ export default function sectionExperience() {
     const sectionElement = section("experience", "experience", "Work Experience");
 
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "card scroll-animate";
 
     const role = document.createElement("h3");
     role.textContent = "Clinical Laboratory Technician";

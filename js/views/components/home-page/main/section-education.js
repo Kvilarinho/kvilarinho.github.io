@@ -6,7 +6,7 @@ export default function sectionEducation() {
     const sectionElement = section("education", "education", "Education");
 
     const card = document.createElement("div");
-    card.classList.add("card", "education-card");
+    card.classList.add("card", "education-card", "scroll-animate");
     
     sectionElement.appendChild(card);
 

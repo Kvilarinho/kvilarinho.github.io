@@ -1,6 +1,6 @@
 export default function section(className, id, title) {
     const section = document.createElement("section");
-    section.className = className;
+    section.className = className + " scroll-animate";
     section.id = id;
 
     const sectionTitle = document.createElement("h2");

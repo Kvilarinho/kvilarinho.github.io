@@ -7,7 +7,7 @@ export default function sectionProjects() {
     const sectionElement = section("projects", "projects", "Projects");
 
     const grid = document.createElement("div");
-    grid.className = "projects-grid";
+    grid.className = "projects-grid scroll-animate";
 
     // Create project cards
     const project1 = projectCard(
