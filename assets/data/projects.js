@@ -35,6 +35,7 @@ const bullseye = {
             "IntelliJ IDEA"
         ]
     },
+    tags: ["Java", "OOP", "Factory Pattern", "2D Game", "File I/O"],
     projectLink: "project.html?project=bullseye",
     github: "https://github.com/Kvilarinho/Bullseye"
 };
@@ -91,6 +92,7 @@ const teamSafetyMonitor = {
             "VS Code"
         ]
     },
+    tags: ["Java", "Spring Boot", "JPA/Hibernate", "REST API", "PostgreSQL", "JavaScript", "CSS3", "HTML5"],
     projectLink: "project.html?project=teamSafetyMonitor",
     github: "https://github.com/Kvilarinho/team_safety_monitor"
 };
@@ -136,6 +138,7 @@ const vanilla = {
             "Logging with java.util.logging"
         ]
     },
+    tags: ["Java 17", "HTTP", "Sockets", "Concurrency", "Stream API"],
     projectLink: "project.html?project=vanilla",
     github: "https://github.com/Kvilarinho/Vanilla-WebServer"
 };
@@ -183,6 +186,7 @@ const concurrentTcp = {
             "Javadoc"
         ]
     },
+    tags: ["Java", "TCP/IP", "Concurrency", "Strategy Pattern", "JUnit"],
     projectLink: "project.html?project=concurrentTcp",
     github: "https://github.com/Kvilarinho/Concurrent-TCP-ChatServer"
 };
@@ -225,6 +229,7 @@ const taskManager = {
             "Maven"
         ]
     },
+    tags: ["Java", "OOP", "Strategy Pattern", "File I/O"],
     projectLink: "project.html?project=taskManager",
     github: "https://github.com/Kvilarinho/Task-Manager"
 };
@@ -277,11 +282,114 @@ const portfolioWebsite = {
             "VS Code"
         ]
     },
+    tags: ["JavaScript", "ES6 Modules", "MVC", "CSS3", "DOM"],
     projectLink: "project.html?project=portfolioWebsite",
     github: "https://github.com/Kvilarinho/kvilarinho.github.io"
 };
 
 
+
+const financeTracker = {
+    title: "Finance Tracker (CLI)",
+    images: {
+        cover: "assets/img/projects/finance-tracker/Finance Tracker.jpg"
+    },
+    shortDescription: "A CLI application to track personal income and expenses, built with <strong>.NET 9 and C#</strong>. " +
+                        "Follows a <strong>layered architecture with Repository and Service patterns</strong>, file-based persistence, and unit tests.",
+    longDescription: {
+        intro: "Finance Tracker is a command-line application developed in C# with .NET 9, designed to register, list, and remove personal " +
+            "income and expense transactions directly from the terminal. The project explores clean architecture principles in C# and .NET, " +
+            "including interface-based design, separation of concerns, and immutable domain models.",
+        features: [
+            "Add income or expense transactions with category, amount, description, and date",
+            "List all transactions with total balance summary",
+            "Remove transactions by ID",
+            "Automatic JSON persistence on every mutation",
+            "Transaction model implemented as a C# record — immutable by design",
+            "Unit tests covering core business logic"
+        ],
+        architecture: "The application follows a layered architecture with clear separation between domain models, interfaces, repositories, and services. " +
+            "ITransactionRepository abstracts data access, ITransactionService abstracts business logic, and FileStorageService handles persistence as a " +
+            "dedicated infrastructure concern. Manual dependency wiring in Program.cs keeps the setup explicit and framework-free.",
+        designDecisions: "Transactions are modelled as C# records, making them immutable by design — a transaction is never edited, only removed. " +
+            "Persistence is triggered on every mutation rather than tracking dirty state, which is a deliberate tradeoff that simplifies the implementation " +
+            "at the cost of slightly more disk writes — acceptable for a CLI app with small datasets. Invalid remove operations throw KeyNotFoundException " +
+            "to fail loudly instead of silently."
+    },
+    technologies: {
+        backend: [
+            "C#",
+            ".NET 9",
+            "Record Types (Immutable Domain Model)",
+            "Repository Pattern",
+            "Service Layer",
+            "Interface-Based Design",
+            "JSON File Storage",
+            "xUnit"
+        ],
+        frontend: [
+            "Command-Line Interface (CLI)"
+        ],
+        tools: [
+            "dotnet CLI",
+            "Git & GitHub"
+        ]
+    },
+    tags: ["C#", ".NET 9", "Repository Pattern", "xUnit", "Moq", "JSON"],
+    projectLink: "project.html?project=financeTracker",
+    github: "https://github.com/Kvilarinho/FinanceTracker"
+};
+
+const libraryBookTracker = {
+    title: "Library Book Tracker (CLI)",
+    images: {
+        cover: "assets/img/projects/library-book-tracker/Library Book Tracker.jpg"
+    },
+    shortDescription: "A CLI application to manage a library's books, clients, and loans, built with <strong>C# and .NET 9</strong>. " +
+                        "Uses <strong>Strategy pattern for commands</strong>, a dictionary-based dispatcher, and a layered architecture with JSON persistence.",
+    longDescription: {
+        intro: "Library Book Tracker is a command-line application developed in C# and .NET to manage books, clients, and loan operations " +
+            "for a small library. The project focuses on clean architecture, design patterns, and real-world domain modelling — " +
+            "including a complete loan history audit trail and full separation of concerns across repositories, services, and CLI commands.",
+        features: [
+            "Add, list, and remove books",
+            "Add, list, and remove clients",
+            "Loan books to clients and return them",
+            "View full loan history per client",
+            "Automatic JSON persistence on every add, remove, loan, or return operation",
+            "Dictionary-based command dispatcher in MainMenu for clean command routing"
+        ],
+        architecture: "The application is organized into Models, Interfaces, Repositories, Services, and a CLI layer. " +
+            "Commands implement the Strategy pattern via ICommand, and MainMenu acts as a dictionary-based dispatcher mapping menu options to command strategies. " +
+            "Dependencies are wired manually in Program.cs, keeping the setup explicit without relying on a DI container. " +
+            "BaseEntity provides a shared Id contract for all domain models.",
+        designDecisions: "Data is persisted to JSON after every mutation to guarantee reliability without a manual save step — the I/O cost is negligible at this scale. " +
+            "Loan records are never deleted: returning a book sets the ReturnDate but keeps the record, preserving a complete audit trail. Active loans are identified by ReturnDate == null. " +
+            "Loan is modelled as a separate entity linking Book and Client by Id, reducing coupling between BookService and ClientService and making it straightforward to extend the loan model independently."
+    },
+    technologies: {
+        backend: [
+            "C#",
+            ".NET 9",
+            "Strategy Pattern (ICommand)",
+            "Repository Pattern",
+            "Service Layer",
+            "Interface-Based Design",
+            "JSON File Storage",
+            "Manual Dependency Wiring"
+        ],
+        frontend: [
+            "Command-Line Interface (CLI)"
+        ],
+        tools: [
+            "dotnet CLI",
+            "Git & GitHub"
+        ]
+    },
+    tags: ["C#", ".NET 9", "Strategy Pattern", "Repository Pattern", "JSON"],
+    projectLink: "project.html?project=libraryBookTracker",
+    github: "https://github.com/Kvilarinho/LibraryBookTracker"
+};
 
 export const projects = {
     bullseye,
@@ -289,6 +397,8 @@ export const projects = {
     concurrentTcp,
     taskManager,
     portfolioWebsite,
-    teamSafetyMonitor
+    teamSafetyMonitor,
+    financeTracker,
+    libraryBookTracker
 };
 

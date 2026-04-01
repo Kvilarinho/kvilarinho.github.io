@@ -303,6 +303,22 @@ section>h2 {
   flex: 1;
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-1);
+  margin-top: var(--s-2);
+}
+
+.project-tag {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(167, 139, 250, 0.08);
+}
+
 .project-card .exp-toggle {
   align-self: flex-start;
 }
