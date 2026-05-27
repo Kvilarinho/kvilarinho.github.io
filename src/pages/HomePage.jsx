@@ -1,14 +1,13 @@
-import Footer from '../components/common/Footer';
-import Header from '../components/common/Header';
-import useScrollAnimation from '../hooks/useScrollAnimation';
+import Layout from '../components/common/Layout'
+import HeroSection from '../components/home/HeroSection'
+import usePageAnimation from '../hooks/usePageAnimation'
 
 export default function HomePage() {
-    useScrollAnimation();
+    const visible = usePageAnimation()
 
     return (
-        <div>
-            <Header />
-            <Footer />
-        </div>
-    );
+        <Layout>
+            <HeroSection visible={visible} />
+        </Layout>
+    )
 }
