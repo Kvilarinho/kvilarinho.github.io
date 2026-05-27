@@ -3,7 +3,7 @@ import avatar from '../../assets/avatar.png'
 export default function HeroSection({ visible }) {
     return (
         <section className="hero">
-            <div className="hero-inner">
+            <div className="hero-inner" style={{ paddingTop: '110px' }}>
                 <img
                     src={avatar}
                     alt="Avatar"
