@@ -180,7 +180,7 @@ nav {
     radial-gradient(1000px 600px at 85% 0%, rgba(110, 231, 255, .25) 0%, rgba(11, 15, 20, 0) 70%),
     linear-gradient(180deg, rgba(16, 32, 51, .35), rgba(11, 15, 20, 0), var(--bg) 60%);
   padding-bottom: var(--s-5);
-  min-height: 100vh;
+  min-height: auto;
 }
 
 .hero-inner {
@@ -456,6 +456,18 @@ a#githubLink.exp-toggle {
 
 .site-footer {
   padding: var(--s-4) 0;
+}
+
+/* === Page Transitions === */
+.page-enter {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.page-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1), transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===== PROJECT PAGE ===== */
