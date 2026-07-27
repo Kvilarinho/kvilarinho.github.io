@@ -270,6 +270,12 @@ section>h2 {
   margin-bottom: var(--s-3);
 }
 
+section.project-sections {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 80px var(--s-4) var(--s-6);
+}
+
 /* ===== CARDS ===== */
 .card {
   background: linear-gradient(180deg, #101824, #0c131c);

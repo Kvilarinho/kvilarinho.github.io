@@ -1,7 +1,7 @@
 const bullseye = {
     title: "Bullseye",
     images: {
-        cover: "assets/img/projects/bullseye/bullseye.jpeg"
+        cover: "img/projects/bullseye/bullseye.jpeg"
     },
     shortDescription: "A 2D <strong>Java game</strong> developed using " +
                         "<strong>OOP, enums, factory pattern, randomization logic, and file I/O</strong> for persistent high scores. <br>" +
@@ -44,8 +44,8 @@ const bullseye = {
 const teamSafetyMonitor = {
     title: "Team Safety Monitor",
     images: {
-        cover: "assets/img/projects/team-safety-monitor/team_safety_monitor_login.jpeg",
-        previewImage: "assets/img/projects/team-safety-monitor/team_safety_monitor_dashboard.jpeg"
+        cover: "/img/projects/team-safety-monitor/team_safety_monitor_login.jpeg",
+        previewImage: "/img/projects/team-safety-monitor/team_safety_monitor_dashboard.jpeg"
     },
     shortDescription: "Team Safety Monitor is a full-stack web application designed " +
                         "to monitor team workload and identify burnout risk through metrics and alerts. " +
@@ -101,7 +101,7 @@ const teamSafetyMonitor = {
 const vanilla = {
     title: "Vanilla HTTP Web Server",
     images: {
-        cover: "assets/img/projects/vanilla-webserver/vanilla-webserver.jpeg"
+        cover: "/img/projects/vanilla-webserver/vanilla-webserver.jpeg"
     },
     shortDescription: "Simple multithreaded HTTP server built in <strong>Java</strong> — serves static files with <strong>concurrency, Stream API, and clean OOP structure</strong>.",
     longDescription: {
@@ -147,7 +147,7 @@ const vanilla = {
 const concurrentTcp = {
     title: "Concurrent TCP Chat",
     images: {
-        cover: "assets/img/projects/concurrent-tcp-chatserver/concurrent-tcp-chatserver.jpeg"
+        cover: "/img/projects/concurrent-tcp-chatserver/concurrent-tcp-chatserver.jpeg"
     },
     shortDescription: "A multithreaded <strong>TCP chat server and client</strong> with commands, private messages, admin mode, and clean architecture. " +
                         "<br>Includes tests <strong>(JUnit + Mockito) and full documentation.</strong> ",
@@ -195,7 +195,7 @@ const concurrentTcp = {
 const taskManager = {
     title: "Task Manager (CLI)",
     images: {
-        cover: "assets/img/projects/task-manager/task-manager.jpeg"
+        cover: "/img/projects/task-manager/task-manager.jpeg"
     },
     shortDescription: "Console-based task manager built with <strong>OOP and Strategy Pattern for command handling " +
         "</strong>, includes file-based persistence.",
@@ -238,7 +238,7 @@ const taskManager = {
 const portfolioWebsite = {
     title: "Personal Portfolio Website",
     images: {
-        cover: "assets/img/projects/portfolio-website/portfolio-website.png"
+        cover: "/img/projects/portfolio-website/portfolio-website.png"
     },
     shortDescription: "A personal portfolio built with <strong>component-based architecture using vanilla JavaScript</strong>, " +
                         "following <strong>MVC pattern and ES6 modules</strong>. Evolved from HTML structure with dynamic content to fully component-driven architecture.",
@@ -292,7 +292,7 @@ const portfolioWebsite = {
 const financeTracker = {
     title: "Finance Tracker (CLI)",
     images: {
-        cover: "assets/img/projects/finance-tracker/Finance Tracker.jpg"
+        cover: "/img/projects/finance-tracker/Finance Tracker.jpg"
     },
     shortDescription: "A CLI application to track personal income and expenses, built with <strong>.NET 9 and C#</strong>. " +
                         "Follows a <strong>layered architecture with Repository and Service patterns</strong>, file-based persistence, and unit tests.",
@@ -343,7 +343,7 @@ const financeTracker = {
 const libraryBookTracker = {
     title: "Library Book Tracker (CLI)",
     images: {
-        cover: "assets/img/projects/library-book-tracker/Library Book Tracker.jpg"
+        cover: "/img/projects/library-book-tracker/Library Book Tracker.jpg"
     },
     shortDescription: "A CLI application to manage a library's books, clients, and loans, built with <strong>C# and .NET 9</strong>. " +
                         "Uses <strong>Strategy pattern for commands</strong>, a dictionary-based dispatcher, and a layered architecture with JSON persistence.",
