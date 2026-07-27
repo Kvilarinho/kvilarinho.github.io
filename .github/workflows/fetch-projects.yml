@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Debug - list files
+        run: ls -la .github/scripts/
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
