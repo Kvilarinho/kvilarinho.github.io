@@ -276,6 +276,7 @@ section.project-sections {
   padding: 80px var(--s-4) var(--s-6);
 }
 
+
 /* ===== CARDS ===== */
 .card {
   background: linear-gradient(180deg, #101824, #0c131c);
@@ -395,15 +396,6 @@ section.project-sections {
 
 .exp-toggle:hover .chev {
   transform: translateX(4px);
-}
-
-section#goBackButton.go-back-button {
-  margin: 5%;
-  margin-top: 1%;
-}
-
-a#githubLink.exp-toggle {
-  margin-left: 5%;
 }
 
 /* ===== EDUCATION ===== */

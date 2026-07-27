@@ -1,7 +1,7 @@
 const bullseye = {
     title: "Bullseye",
     images: {
-        cover: "img/projects/bullseye/bullseye.jpeg"
+        cover: "/img/projects/bullseye/bullseye.jpeg"
     },
     shortDescription: "A 2D <strong>Java game</strong> developed using " +
                         "<strong>OOP, enums, factory pattern, randomization logic, and file I/O</strong> for persistent high scores. <br>" +

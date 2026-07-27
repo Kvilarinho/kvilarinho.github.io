@@ -13,11 +13,11 @@ export default function ProjectPage() {
 
     return (
         <Layout>
-            <section className={`project-sections page-enter ${visible ? 'page-visible' : ''}`} style={{ paddingTop: '80px' }}>
+            <a onClick={() => navigate(-1)} className="exp-toggle" style={{ cursor: 'pointer', margin: '80px 0 0 24px', display: 'inline-flex' }}>
+                <span className="chev">{'<'}</span> Go Back
+            </a>
 
-                <a onClick={() => navigate(-1)} className="exp-toggle" style={{ cursor: 'pointer' }}>
-                    <span className="chev">{'<'}</span> Go Back
-                </a>
+            <section className={`project-sections page-enter ${visible ? 'page-visible' : ''}`}>
 
                 <section id="projectHero">
                     <img className="project-hero" src={project.images.cover} alt={project.title} />
@@ -45,13 +45,11 @@ export default function ProjectPage() {
                     {project.technologies.tools?.length > 0 && <><h3>Tools</h3><ul>{project.technologies.tools.map((t, i) => <li key={i}>{t}</li>)}</ul></>}
                 </section>
 
-                <a href={project.github} target="_blank" className="exp-toggle" id="githubLink">
-                    GitHub Repo <span className="chev">{'>'}</span>
-                </a>
-
-                <br /><br />
-
             </section>
+
+            <a href={project.github} target="_blank" className="exp-toggle" id="githubLink" style={{ margin: '0 0 32px 24px', display: 'inline-flex' }}>
+                GitHub Repo <span className="chev">{'>'}</span>
+            </a>
         </Layout>
     )
 }
