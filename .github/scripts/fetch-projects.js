@@ -15,12 +15,12 @@ const CUSTOM_TITLES = {
 
 const CUSTOM_IMAGES = {
     'kvilarinho.github.io': '/img/projects/portfolio-website/portfolio-website.png',
-    'Study-Clarify': '',
+    'Study-Clarify': '/img/projects/study-clarify/study-clarify.png',
     'Concurrent-TCP-ChatServer': '/img/projects/concurrent-tcp-chatserver/concurrent-tcp-chatserver.jpeg',
     'Vanilla-Webserver': '/img/projects/vanilla-webserver/vanilla-webserver.jpeg',
     'Task-Manager': '/img/projects/task-manager/task-manager.jpeg',
     'FinanceTracker': '/img/projects/finance-tracker/Finance Tracker.jpg',
-    'LibraryBookTracker': '/img/projects/library-book-tracker/Library Book Tracker.jpg'
+    'LibraryBookTracker': '/img/projects/library-book-tracker/Library Book Tracker.jpg',
 }
 
 function get(url) {
