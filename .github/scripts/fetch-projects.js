@@ -4,6 +4,10 @@ const fs = require('fs')
 const USERNAME = 'Kvilarinho'
 const TOKEN = process.env.GITHUB_TOKEN
 
+const CUSTOM_TITLES = {
+    'kvilarinho.github.io': 'Personal Portfolio Website'
+}
+
 function get(url) {
     return new Promise((resolve, reject) => {
         https.get(url, {
@@ -38,7 +42,7 @@ async function main() {
 
         projects.push({
             slug: repo.name,
-            title: repo.name.replace(/-/g, ' '),
+            title: CUSTOM_TITLES[repo.name] || repo.name.replace(/-/g, ' '),
             description: repo.description || '',
             tags: repo.topics || [],
             language: repo.language || '',
