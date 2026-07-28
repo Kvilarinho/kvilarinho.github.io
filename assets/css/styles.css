@@ -368,6 +368,18 @@ section.project-sections {
   justify-self: stretch;
 }
 
+section.about > h2,
+section.experience > h2,
+section.education > h2,
+section.projects > h2,
+section.skills > h2,
+section.contacts > h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  margin-bottom: var(--s-5);
+  color: var(--text);
+  letter-spacing: -0.5px;
+}
+
 /* ===== BUTTONS / TOGGLES ===== */
 .exp-toggle {
   display: inline-flex;
