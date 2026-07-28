@@ -398,6 +398,16 @@ section.project-sections {
   transform: translateX(4px);
 }
 
+.project-description::-webkit-scrollbar {
+  display: none;
+}
+
+section.projects {
+  max-width: 100%;
+  padding-left: 15.5%;
+  padding-right: 15%;
+}
+
 /* ===== EDUCATION ===== */
 .education-card {
   padding-top: var(--s-4);
@@ -488,6 +498,7 @@ section.project-sections {
   padding-top: 3%;
 }
 
+img[alt]:not([src*="/"]) { display: none; }
 
 /* ===== MEDIA QUERIES ===== */
 
