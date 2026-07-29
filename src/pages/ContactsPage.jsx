@@ -16,7 +16,7 @@ export default function ContactsPage() {
                     Feel free to reach out through any of the channels below.
                 </p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
 
                     <a href="mailto:katia@katiavilarinho.dev" className="card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', textAlign: 'center', textDecoration: 'none', color: 'var(--text)' }}>
                         <MdEmail size={32} color="var(--accent)" />

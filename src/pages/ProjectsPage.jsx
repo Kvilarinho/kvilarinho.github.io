@@ -22,7 +22,7 @@ export default function ProjectsPage() {
             <section className={`projects page-enter ${visible ? 'page-visible' : ''}`} id="projects">
                 <h2>Projects</h2>
 
-                <div style={{ position: 'relative', padding: '0 24px' }}>
+                <div style={{ position: 'relative', padding: '0 40px' }}>
                     <div ref={emblaRef} style={{ overflow: 'hidden' }}>
                         <div style={{ display: 'flex', gap: '12px', alignItems: 'stretch' }}>
                             {projects.map((project) => (
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
                                     key={project.slug}
                                     className="card project-card"
                                     onClick={() => navigate(`/project/${project.slug}`)}
-                                    style={{ flex: '0 0 420px', display: 'flex', flexDirection: 'column', height: '520px', cursor: 'pointer' }}
+                                    style={{ flex: '0 0 min(420px, 80vw)', display: 'flex', flexDirection: 'column', height: '520px', cursor: 'pointer' }}
                                 >
                                     <div style={{ height: '160px', borderRadius: '8px', overflow: 'hidden', marginBottom: '12px', background: 'var(--border)', flexShrink: 0 }}>
                                         {project.image ? (

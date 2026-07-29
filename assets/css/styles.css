@@ -635,6 +635,31 @@ img[alt]:not([src*="/"]) { display: none; }
   }
 }
 
+@media (max-width: 768px) {
+  section.projects {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  section.projects > h2 {
+    padding-left: var(--s-4);
+  }
+  section.about,
+  section.experience,
+  section.education,
+  section.projects,
+  section.skills,
+  section.contacts {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-items,
+  section.contacts > div {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Mobile small */
 @media (max-width: 480px) {
   .site-header>nav {
