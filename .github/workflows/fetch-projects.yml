@@ -24,7 +24,7 @@ jobs:
       - name: Fetch projects from GitHub API
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node .github/scripts/fetch-projects.js
+        run: node .github/scripts/fetch-projects.cjs
 
       - name: Commit and push projects.json
         run: |
