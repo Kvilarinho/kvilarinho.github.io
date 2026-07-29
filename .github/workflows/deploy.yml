@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows: ["Fetch GitHub Projects"]
+    types:
+      - completed
+  workflow_dispatch:
 
 jobs:
   deploy:
