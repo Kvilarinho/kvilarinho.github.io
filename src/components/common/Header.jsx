@@ -1,11 +1,27 @@
-import { useState } from 'react';
-import avatarLogo from '../../assets/avatar-logo.png';
-import { Link } from 'react-router-dom';
+import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import avatarLogo from '../../assets/avatar-logo.png'
 
 export default function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false)
+    const location = useLocation()
 
-    const closeMenu = () => setIsMenuOpen(false);
+    const closeMenu = () => setMenuOpen(false)
+
+    const navLink = (to, label) => (
+        <Link
+            to={to}
+            className="btn"
+            onClick={closeMenu}
+            style={{
+                color: location.pathname === to ? 'var(--accent)' : '',
+                borderBottom: location.pathname === to ? '2px solid var(--accent)' : '2px solid transparent',
+                paddingBottom: '2px'
+            }}
+        >
+            {label}
+        </Link>
+    )
 
     return (
         <header className="site-header">
@@ -15,23 +31,25 @@ export default function Header() {
             </Link>
 
             <nav className="nav-bar">
-                <button className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+                <button
+                    className={`hamburger ${menuOpen ? 'active' : ''}`}
                     aria-label="Toggle navigation menu"
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
 
-                <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                    <Link to="/about" onClick={closeMenu}>About</Link>
-                    <Link to="/experience" onClick={closeMenu}>Work Experience</Link>
-                    <Link to="/education" onClick={closeMenu}>Education</Link>
-                    <Link to="/projects" onClick={closeMenu}>Projects</Link>
-                    <Link to="/skills" onClick={closeMenu}>Skills</Link>
-                    <Link to="/contacts" onClick={closeMenu}>Contacts</Link>
+                <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
+                    {navLink('/about', 'About')}
+                    {navLink('/experience', 'Work Experience')}
+                    {navLink('/education', 'Education')}
+                    {navLink('/projects', 'Projects')}
+                    {navLink('/skills', 'Skills')}
+                    {navLink('/contacts', 'Contacts')}
                 </div>
             </nav>
         </header>
-    );
+    )
 }
