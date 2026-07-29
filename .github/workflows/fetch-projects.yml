@@ -1,37 +1,38 @@
-name: Fetch GitHub Projects
+name: Deploy to GitHub Pages
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  push:
+    branches:
+      - main
+  workflow_run:
+    workflows: ["Fetch GitHub Projects"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
-  fetch:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Debug - list files
-        run: ls -la .github/scripts/
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Fetch projects from GitHub API
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node .github/scripts/fetch-projects.cjs
+      - name: Install dependencies
+        run: npm install
 
-      - name: Commit and push projects.json
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git fetch origin
-          git reset --soft origin/main
-          git add src/data/projects.json
-          git diff --staged --quiet || git commit -m "chore: update projects.json"
-          git push origin main
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: katiavilarinho.dev
