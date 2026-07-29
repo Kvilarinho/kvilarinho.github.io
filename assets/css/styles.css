@@ -640,9 +640,11 @@ img[alt]:not([src*="/"]) { display: none; }
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
   section.projects > h2 {
     padding-left: var(--s-4);
   }
+
   section.about,
   section.experience,
   section.education,
@@ -650,6 +652,22 @@ img[alt]:not([src*="/"]) { display: none; }
   section.skills,
   section.contacts {
     padding-top: 40px;
+  }
+  
+  section.project-sections {
+    padding: 80px var(--s-3) var(--s-4);
+    overflow-x: hidden;
+  }
+
+  section.project-sections pre {
+    overflow-x: auto;
+    font-size: 0.75rem;
+  }
+
+  section.project-sections table {
+    font-size: 0.8rem;
+    display: block;
+    overflow-x: auto;
   }
 }
 
