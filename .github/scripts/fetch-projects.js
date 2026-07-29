@@ -39,6 +39,50 @@ function get(url) {
     })
 }
 
+function filterReadme(readme) {
+    const sectionsToRemove = [
+        'How to Run',
+        'How to run',
+        'Prerequisites',
+        'Environment Variables',
+        'Running Locally',
+        'Running',
+        'How to Use',
+        'Installation',
+        'Setup',
+        'Requirements',
+        'License'
+    ]
+
+    const lines = readme.split('\n')
+    const result = []
+    let skip = false
+    let currentLevel = 0
+
+    for (const line of lines) {
+        const headingMatch = line.match(/^(#{1,3})\s+(.+)/)
+
+        if (headingMatch) {
+            const level = headingMatch[1].length
+            const title = headingMatch[2].trim()
+
+            if (sectionsToRemove.some(s => title.includes(s))) {
+                skip = true
+                currentLevel = level
+                continue
+            }
+
+            if (skip && level <= currentLevel) {
+                skip = false
+            }
+        }
+
+        if (!skip) result.push(line)
+    }
+
+    return result.join('\n')
+}
+
 async function main() {
     const repos = await get(`https://api.github.com/users/${USERNAME}/repos?per_page=100&sort=updated`)
 
@@ -65,7 +109,7 @@ async function main() {
             stars: repo.stargazers_count,
             updatedAt: repo.updated_at,
             image: CUSTOM_IMAGES[repo.name] || '',
-            readme
+            readme: filterReadme(readme)
         })
     }
 
