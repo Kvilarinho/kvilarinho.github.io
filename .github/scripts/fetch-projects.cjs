@@ -25,7 +25,7 @@ const CUSTOM_IMAGES = {
     'Task-Manager': '/img/projects/task-manager/task-manager.jpeg',
     'FinanceTracker': '/img/projects/finance-tracker/Finance Tracker.jpg',
     'LibraryBookTracker': '/img/projects/library-book-tracker/Library Book Tracker.jpg',
-    'team_safety_monitor': '/img/projects/team-safety-monitor/team_safety_monitor_dashboard.png',
+    'team_safety_monitor': '/img/projects/team-safety-monitor/team_safety_monitor_dashboard.jpeg',
     'Bullseye': '/img/projects/bullseye/bullseye.jpeg'
 }
 
